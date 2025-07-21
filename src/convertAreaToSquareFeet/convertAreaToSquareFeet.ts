@@ -1,4 +1,8 @@
-export default function convertAreaToSquareFeet(area: number): number {
+export default function convertAreaToSquareFeet(area: string): number {
   const conversionFactor = 10.7639;
-  return area * conversionFactor;
+  const a = parseFloat(area);
+
+  if (isNaN(a)) return NaN;
+
+  return Math.abs(a) * conversionFactor;
 }
