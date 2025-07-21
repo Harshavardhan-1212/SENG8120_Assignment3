@@ -27,7 +27,8 @@ Each function:
 
 ## Repository Structure
 
-```
+```plaintext
+.
 ├── calculateCanvasDiagonal/
 │   ├── calculateCanvasDiagonal.ts
 │   └── calculateCanvasDiagonal.test.ts
@@ -56,6 +57,22 @@ Each function:
 │   ├── paintRequiredForMultipleCoats.ts
 │   └── paintRequiredForMultipleCoats.test.ts
 ├── main.ts
+```
+
+## Folder Summary
+
+| Folder | Description |
+|--------|-------------|
+| `calculateCanvasDiagonal/` | Contains function and test to compute the diagonal of a rectangle using the Pythagorean theorem. |
+| `calculateCanvasPerimeter/` | Contains function and test to calculate the perimeter of a canvas based on length and width. |
+| `calculateCanvasSize/` | Alternate function and test to compute the total perimeter; primarily handles string input parsing. |
+| `calculatePaintCost/` | Contains logic and test cases for calculating the cost of paint based on quantity and unit price. |
+| `calculateTotalCost/` | Contains function and test for summing paint and labor costs into a total project cost. |
+| `convertAreaToSquareFeet/` | Includes function and test to convert area from metric (square meters) to imperial (square feet). |
+| `estimatePaintingTime/` | Contains function and test to estimate time required to paint based on area and speed. |
+| `paintRequiredCalculator/` | Contains function and test for calculating how much paint is required based on area coverage. |
+| `paintRequiredForMultipleCoats/` | Extends `paintRequiredCalculator` to support multiple coats; includes relevant tests. |
+| `main.ts` | Entry point file for running the application (if applicable); can be used to manually test or demo all functions. |
 
 ## Branch Usage
 
