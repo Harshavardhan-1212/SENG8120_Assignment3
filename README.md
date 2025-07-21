@@ -23,31 +23,39 @@ Each function:
 - Accepts inputs as strings for robustness  
 - Converts negative inputs to positive values automatically  
 - Returns `NaN` if inputs are invalid or zero-division occurs  
-- Is accompanied by a full suite of Jest unit tests covering positive, zero, negative, and invalid input cases
+- Is accompanied by a Jest unit tests covering positive, zero, negative and invalid input cases
 
-## Repository Structure  
+## Repository Structure
 
-/src
-|-- calculateCanvasSize.ts
-|-- calculateCanvasPerimeter.ts
-|-- calculateCanvasDiagonal.ts
-|-- calculatePaintCost.ts
-|-- calculateTotalCost.ts
-|-- convertAreaToSquareFeet.ts
-|-- estimatePaintingTime.ts
-|-- paintRequiredCalculator.ts
-|-- paintRequiredForMultipleCoats.ts
-
-/tests
-|-- calculateCanvasSize.test.ts
-|-- calculateCanvasPerimeter.test.ts
-|-- calculateCanvasDiagonal.test.ts
-|-- calculatePaintCost.test.ts
-|-- calculateTotalCost.test.ts
-|-- convertAreaToSquareFeet.test.ts
-|-- estimatePaintingTime.test.ts
-|-- paintRequiredCalculator.test.ts
-|-- paintRequiredForMultipleCoats.test.ts
+```
+├── calculateCanvasDiagonal/
+│   ├── calculateCanvasDiagonal.ts
+│   └── calculateCanvasDiagonal.test.ts
+├── calculateCanvasPerimeter/
+│   ├── calculateCanvasPerimeter.ts
+│   └── calculateCanvasPerimeter.test.ts
+├── calculateCanvasSize/
+│   ├── calculateCanvasSize.ts
+│   └── calculateCanvasSize.test.ts
+├── calculatePaintCost/
+│   ├── calculatePaintCost.ts
+│   └── calculatePaintCost.test.ts
+├── calculateTotalCost/
+│   ├── calculateTotalCost.ts
+│   └── calculateTotalCost.test.ts
+├── convertAreaToSquareFeet/
+│   ├── convertAreaToSquareFeet.ts
+│   └── convertAreaToSquareFeet.test.ts
+├── estimatePaintingTime/
+│   ├── estimatePaintingTime.ts
+│   └── estimatePaintingTime.test.ts
+├── paintRequiredCalculator/
+│   ├── paintRequiredCalculator.ts
+│   └── paintRequiredCalculator.test.ts
+├── paintRequiredForMultipleCoats/
+│   ├── paintRequiredForMultipleCoats.ts
+│   └── paintRequiredForMultipleCoats.test.ts
+├── main.ts
 
 ## Branch Usage
 
