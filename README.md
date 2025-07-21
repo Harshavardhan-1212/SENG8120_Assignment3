@@ -4,13 +4,50 @@ Version: Alpaca
 
 ## Purpose
 
-This repository houses the code we require for examples and assignments.
+This repository contains implementations and automated tests for functions related to painting and measurement calculations. The focus is on apply modern automated testing principles to example functions with strict input validation, comprehensive unit tests and robust error handling.
 
-## Repository Usage
+## Assignment 3 Overview  
 
-This repository will contain branches of code.
+This assignment includes the following core functions:  
+- **calculateCanvasSize**: Computes the total perimeter of a rectangular canvas given length and width
+- **calculateCanvasPerimeter**: Computes perimeter given length and width  
+- **calculateCanvasDiagonal**: Computes diagonal length using Pythagoras theorem  
+- **calculatePaintCost**: Computes total paint cost given quantity and unit price  
+- **calculateTotalCost**: Sums paint and labor costs  
+- **convertAreaToSquareFeet**: Converts metric area to imperial units  
+- **estimatePaintingTime**: Estimates painting time based on area and speed  
+- **paintRequiredCalculator**: Computes paint quantity needed based on coverage  
+- **paintRequiredForMultipleCoats**: Extends paint requirement for multiple coats
 
-Please refer to your instructor's directions on how to use this repository.
+Each function:  
+- Accepts inputs as strings for robustness  
+- Converts negative inputs to positive values automatically  
+- Returns `NaN` if inputs are invalid or zero-division occurs  
+- Is accompanied by a full suite of Jest unit tests covering positive, zero, negative, and invalid input cases
+
+## Repository Structure  
+
+/src
+|-- calculateCanvasSize.ts
+|-- calculateCanvasPerimeter.ts
+|-- calculateCanvasDiagonal.ts
+|-- calculatePaintCost.ts
+|-- calculateTotalCost.ts
+|-- convertAreaToSquareFeet.ts
+|-- estimatePaintingTime.ts
+|-- paintRequiredCalculator.ts
+|-- paintRequiredForMultipleCoats.ts
+
+/tests
+|-- calculateCanvasSize.test.ts
+|-- calculateCanvasPerimeter.test.ts
+|-- calculateCanvasDiagonal.test.ts
+|-- calculatePaintCost.test.ts
+|-- calculateTotalCost.test.ts
+|-- convertAreaToSquareFeet.test.ts
+|-- estimatePaintingTime.test.ts
+|-- paintRequiredCalculator.test.ts
+|-- paintRequiredForMultipleCoats.test.ts
 
 ## Branch Usage
 
@@ -59,3 +96,7 @@ To run a specific test, you can use
 npm run test [my test name]
 ```
 
+## Author
+
+**Harshavardhan Reddy Singireddy**  
+*Date: 20-07-2025*
